@@ -8,14 +8,14 @@ public class Stand {
     private ArrayList<Makanan> daftarMakanan;
     private ArrayList<Minuman> daftarMinuman;
 
-// Constructor
+    // Constructor
     public Stand() {
         this.id = counter++;
         daftarMakanan = new ArrayList<>();
         daftarMinuman = new ArrayList<>();
     }
 
-// Getter
+    // Getter
     public int getId(){ 
         return id; 
     }
@@ -32,7 +32,7 @@ public class Stand {
         return daftarMinuman; 
     }
 
-// Setter
+    // Setter
     public void setName(String newName){ 
         name = newName; 
     }

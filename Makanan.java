@@ -27,6 +27,7 @@ public class Makanan{
         harga = newHarga;
     }
 
+    // Behavior
     public void tampilkanMenu(int nomor) {
         System.out.println(nomor + ". " + nama + " - Rp" + harga);
     }

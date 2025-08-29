@@ -1,24 +1,35 @@
 public class Pesanan {
     private String namaItem;
-    private int harga;
+    private double harga;
     private int jumlah;
 
-    public Pesanan(String namaItem, int harga, int jumlah) {
+    // Constructor
+    public Pesanan(String namaItem, double harga, int jumlah) {
         this.namaItem = namaItem;
         this.harga = harga;
         this.jumlah = jumlah;
     }
 
-    public String getNamaItem(){
+    // Getter
+    public String getNamaItem() {
         return namaItem;
     }
-    public int getHarga(){
+
+    public double  getHarga() {
         return harga;
     }
-    public int getJumlah(){
+
+    public int getJumlah() {
         return jumlah;
     }
-    public int getSubtotal(){
-        return harga*jumlah;
+
+    public double  getSubtotal() {
+        return harga * jumlah;
+    }
+
+    // Behavior
+    public void display() {
+        System.out.println(namaItem + " x" + jumlah + " = Rp " + getSubtotal());
+    }
 }
-}
+

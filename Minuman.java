@@ -2,7 +2,7 @@ public class Minuman{
     private static int counter = 1;
     private int id;
     private String nama;
-    private int harga;
+    private double harga;
 
     // Constructor
     public Minuman(){
@@ -15,7 +15,7 @@ public class Minuman{
     public String getNama(){
         return nama;
     }
-    public int getHarga(){
+    public double getHarga(){
         return harga;
     }
 
@@ -23,9 +23,11 @@ public class Minuman{
     public void setNama(String newNama){
         nama = newNama;
     }
-    public void setHarga(int newHarga){
+    public void setHarga(double newHarga){
         harga = newHarga;
     }
 
-    
+    public void tampilkanMenu(int nomor) {
+        System.out.println(nomor + ". " + nama + " - Rp" + harga);
+    }
 }

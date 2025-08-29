@@ -2,7 +2,7 @@ public class Makanan{
     private static int counter = 1;
     private int id;
     private String nama;
-    private int harga;
+    private double  harga;
 
     // Constructor
     public Makanan(){
@@ -15,7 +15,7 @@ public class Makanan{
     public String getNama(){
         return nama;
     }
-    public int getHarga(){
+    public double getHarga(){
         return harga;
     }
 
@@ -27,5 +27,8 @@ public class Makanan{
         harga = newHarga;
     }
 
+    public void tampilkanMenu(int nomor) {
+        System.out.println(nomor + ". " + nama + " - Rp" + harga);
+    }
     
 }
